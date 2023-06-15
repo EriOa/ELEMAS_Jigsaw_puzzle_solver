@@ -10,8 +10,8 @@ def load_img(num):
     bin_img_lst = []
     img_lst = []
     for i in range(num):
-        path1 = '.\Cropped_Image2/Cropped_ImageCroppedImage{}.jpg'.format(i+1)
-        path2 = '.\Cropped_Bin_Image/Cropped_ImageCroppedImage{}.jpg'.format(i+1)
+        path1 = './Cropped_Image2/Cropped_ImageCroppedImage{}.jpg'.format(i+1)
+        path2 = './Cropped_Bin_Image/Cropped_ImageCroppedImage{}.jpg'.format(i+1)
         dst = cv2.imread(path2)
         gray = cv2.cvtColor(dst, cv2.COLOR_RGB2GRAY)
         _, Bin_img1 = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
