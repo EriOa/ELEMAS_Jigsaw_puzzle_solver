@@ -9,7 +9,7 @@ def Load_images(num, invert=False, binary=False):
     imagearray = []
     imagearray_gray = []
     for i in range(num):
-        path = "C:/Users/PC/OneDrive - Universitetet i Stavanger/Erik Skole (Master)/ELEMAS/Bilder/Moomie/Cropped_ImageCroppedImage{}.jpg".format(i)
+        path = "./Moomie/Cropped_ImageCroppedImage{}.jpg".format(i)
         img = cv2.imread(path)
         if invert:
             img = cv2.flip(img,1)
